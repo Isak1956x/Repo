@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Creacion de Encuesta</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="../css/crearEncuesta.css">
+<body>
+
+  <div class="container mt-5">
+    <h2 class="mb-4">Crear Encuesta</h2>
+    <div class="mb-4">
+      <input type="text" id="titulo" class="form-control mb-2" placeholder="Título">
+      <textarea id="descripcion" class="form-control mb-2" placeholder="Descripción"></textarea>
+      <select id="estado" class="form-control mb-2">
+        <option value="Publica">Publica</option>
+        <option value="Privada">Privada</option>
+      </select>
+      <input type="date" id="fechaVencimiento" class="form-control mb-2">
+      <button class="btn btn-primary" onclick="crearEncuesta()">Crear Encuesta</button>
+      <a href="PanelAdmin.html" class="btn btn-secondary">Cancelar</a>
+    </div>
+
+  <script src="../Js/tareas.js"></script>
+
+</body>
+</html>

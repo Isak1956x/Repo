@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"> 
+    <link rel="stylesheet" href="../css/Inicio.css">
+    <title>Sistemas de Encuestas</title>
+  </head>
+  
+  <body id="bodyTareas">
+
+    <div class="container mt-3">
+      <div class="header-container">
+        <button id="logout-button" class="btn btn-danger" onclick="logout()">
+          <i class="fas fa-sign-out-alt"></i>
+        </button>
+        <h2 class="mb-4">Sistemas de Encuestas</h2>
+      </div>
+
+      <div class="search-container">
+        <input 
+          type="text" 
+          id="search-input" 
+          placeholder="Buscar Encuesta..." 
+          oninput="filtrarTareas()" 
+        />
+        <a href="CrearEncuesta.html"><button id="btn-crear-tarea">+</button></a>
+        <a href="DashBoard.html" class="btn btn-info" id = "btn-reportes">
+          <i class="fas fa-chart-bar"></i> 
+        </a>
+      </div>
+      <div id="task-list"></div>
+    </div>
+
+    <script src="../Js/tareas.js"></script>
+
+  </body>
+</html>

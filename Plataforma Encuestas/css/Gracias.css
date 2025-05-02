@@ -1,0 +1,123 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #f4f6f8;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    text-align: center;
+    max-width: 400px;
+    animation: fadeIn 0.6s ease-out;
+  }
+  
+  h1 {
+    color: #2ecc71;
+    margin-top: 20px;
+    font-size: 32px;
+  }
+  #h1E {
+    color: red;
+    margin-top: 20px;
+    font-size: 32px;
+  }
+  
+  
+  p {
+    color: #555;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  #P2E
+  {
+    color: #555;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
+  .checkmark-circle {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .background {
+    width: 100%;
+    height: 100%;
+    background: #2ecc71;
+    border-radius: 50%;
+    animation: scaleIn 0.5s ease-out;
+  }
+  
+  .checkmark {
+    position: absolute;
+    top: 28%;
+    left: 22%;
+    width: 50px;
+    height: 25px;
+    border-left: 5px solid #fff;
+    border-bottom: 5px solid #fff;
+    transform: rotate(-45deg);
+    animation: drawCheck 0.5s 0.3s ease forwards;
+    opacity: 0;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes scaleIn {
+    from { transform: scale(0); }
+    to { transform: scale(1); }
+  }
+  
+  @keyframes drawCheck {
+    to { opacity: 1; }
+  }
+  .x-circle {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 20px;
+    background: #ffe6e6;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: pop 0.5s ease-in-out;
+  }
+  
+  .x-mark {
+    position: relative;
+    width: 50px;
+    height: 50px;
+  }
+  .x-mark::before,
+.x-mark::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50px;
+  height: 6px;
+  background-color: #e74c3c;
+  border-radius: 3px;
+}
+
+.x-mark::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.x-mark::after {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}

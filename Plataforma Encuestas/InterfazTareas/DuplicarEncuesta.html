@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Editar Encuesta</title>
+  <link rel="stylesheet" href="..//css/agregarPregunta.css">
+</head>
+<body>
+
+  <h2>Duplicar Encuesta</h2>
+  <form id="form-editar-encuesta">
+    <label for="edit-titulo">Título:</label>
+    <input type="text" id="edit-titulo" name="titulo" />
+
+    <label for="edit-descripcion">Descripción:</label>
+    <textarea id="edit-descripcion" name="descripcion"></textarea>
+
+    <label for="edit-estado">Visibilidad</label>
+    <select id="edit-estado">
+      <option value="true">Publica</option>
+      <option value="false">Privada</option>
+    </select>
+
+    <label for="edit-fechaVencimiento">Fecha de expiración:</label>
+    <input type="date" id="edit-fechaVencimiento" name="fechaVencimiento" />
+
+    <div id="preguntas-edicion-container">
+      <!-- Preguntas y opciones renderizadas dinámicamente aquí -->
+    </div>
+
+      <!-- campos de edición aquí -->
+      <button id="btn-duplicar-encuesta" type="button">Duplicar Encuesta</button>
+
+
+    
+  </form>
+
+  <script src="..//Js/duplicarEncuesta.js"></script>
+</body>
+</html>

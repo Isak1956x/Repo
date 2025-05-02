@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responder Encuesta</title>
+    <link rel="stylesheet" href="../css/preguntas.css">
+    <!-- Si tienes un archivo de estilos -->
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+(function(){
+  emailjs.init({
+    publicKey: "YTQdMnhFQFw-5JffD",
+  });
+})();
+</script>
+</head>
+<body>
+    <div class="encuesta-container" id="encuesta-container">
+        <!-- Aquí se renderizarán los detalles de la encuesta -->
+    </div>
+
+    <div class="preguntas-container" id="preguntas-container">
+        <!-- Aquí se renderizarán las preguntas y opciones -->
+    </div>
+
+    <div class="submit-container">
+        <button id="submit-btn">Enviar Respuestas</button>
+    </div>
+
+    <script src="../Js/responder-encuesta.js"></script> <!-- Aquí va tu archivo JS -->
+</body>
+</html>

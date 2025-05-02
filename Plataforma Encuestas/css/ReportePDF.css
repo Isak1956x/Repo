@@ -1,0 +1,139 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f8ff;
+    margin: 0;
+    padding: 0;
+    color: #333;
+  }
+  
+  .container {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  #encuesta-container h2 {
+    font-size: 2rem;
+    color: #00796b;
+  }
+  
+  #preguntas-container {
+    margin-top: 30px;
+  }
+  
+  .pregunta-item {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #e0f7fa;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .pregunta-item h4 {
+    font-size: 1.4rem;
+    color: #004d40;
+  }
+  
+  button {
+    background-color: #00796b;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #004d40;
+  }
+  
+  button span {
+    margin-right: 8px;
+  }
+  
+  #pdf-reporte {
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  #pdf-reporte h1 {
+    text-align: center;
+    color: #00796b;
+    font-size: 2.2rem;
+  }
+  
+  #pdf-reporte div {
+    margin-bottom: 20px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  ul li {
+    margin: 5px 0;
+  }
+  
+  ul li span {
+    margin-right: 8px;
+  }
+  #pdf-reporte {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    font-size: 12pt;
+    color: #000;
+  }
+  
+  #pdf-reporte h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 20pt;
+  }
+  
+  #pdf-reporte hr {
+    margin: 30px 0;
+    border: none;
+    border-top: 1px solid #ccc;
+  }
+  
+  #pdf-reporte ul {
+    padding-left: 20px;
+    margin-bottom: 10px;
+  }
+  
+  #pdf-reporte li {
+    margin-bottom: 5px;
+    line-height: 1.5;
+  }
+  
+  .pregunta-item {
+    margin-bottom: 40px;
+    page-break-inside: avoid;
+  }
+  
+  @media print {
+    body {
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+  
+    .pregunta-item {
+      page-break-inside: avoid;
+    }
+  }
+  
+  

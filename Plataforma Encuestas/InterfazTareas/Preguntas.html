@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Agregar Preguntas</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/agregarPregunta.css">
+</head>
+
+<body>
+  <div class="container mt-5">
+    <h2>Agregar Pregunta a la Encuesta</h2>
+    <form id="form-pregunta">
+      <div class="form-group">
+        <label for="textoPregunta">Texto de la Pregunta</label>
+        <textarea id="textoPregunta" class="form-control" required></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="tipoPregunta">Tipo de Pregunta</label>
+        <select id="tipoPregunta" class="form-control" required>
+          <option value="1">Escala (1-5)</option>
+          <option value="2">Escala (1-10)</option>
+          <option value="0">Opción Múltiple</option>
+        </select>
+      </div>
+
+      <!-- Opciones de Selección Múltiple -->
+      <div id="opciones-multiples" class="form-group d-none">
+        <label>Opciones:</label>
+        <div id="contenedor-opciones"></div>
+        <button type="button" class="btn btn-outline-secondary btn-sm" onclick="agregarOpcion()">Agregar Opción</button>
+      </div>
+
+
+      <button type="submit" class="btn btn-primary">Guardar Pregunta</button>
+      <a href="PanelAdmin.html" class="btn btn-secondary">Salir</a>
+    </form>
+  </div>
+
+  <script src="../js/tareas.js"></script>
+</body>
+</html>
